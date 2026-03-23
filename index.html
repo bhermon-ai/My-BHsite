@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ברוך חרמון | עיתונאי, סופר ומרצה</title>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-color: #1a3a5f;
@@ -34,69 +34,43 @@
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                         url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=1500'); 
             background-attachment: fixed; background-size: cover; background-position: center;
-            height: 85vh; display: flex; flex-direction: column; justify-content: center; align-items: center; 
+            height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; 
             text-align: center; color: white;
         }
-        header h1 { 
-            font-size: 4.5rem; margin: 0; color: var(--accent-color); 
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.5); 
-            letter-spacing: 2px;
-        }
-        .subtitle { font-size: 1.8rem; margin-top: 15px; font-weight: 300; border-top: 1px solid var(--accent-color); padding-top: 10px; }
+        header h1 { font-size: 4rem; margin: 0; color: var(--accent-color); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .subtitle { font-size: 1.6rem; margin-top: 10px; font-weight: 300; border-top: 1px solid var(--accent-color); padding-top: 10px; }
 
-        .container { max-width: 1000px; margin: -50px auto 50px auto; padding: 0 20px; position: relative; z-index: 10; }
+        .container { max-width: 900px; margin: -40px auto 50px auto; padding: 0 20px; position: relative; z-index: 10; }
         
         section { 
-            padding: 50px; 
+            padding: 40px; 
             background: white; 
-            margin-bottom: 40px; 
-            border-radius: 4px; 
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
-            border-top: 5px solid var(--accent-color);
+            margin-bottom: 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
+            border-top: 4px solid var(--accent-color);
         }
         
-        h2 { 
-            color: var(--primary-color); 
-            font-size: 2.2rem;
-            margin-bottom: 25px; 
-            position: relative;
-        }
-        h2::after { content: ''; position: absolute; bottom: -5px; right: 0; width: 60px; height: 3px; background: var(--accent-color); }
+        h2 { color: var(--primary-color); border-bottom: 2px solid #eee; padding-bottom: 10px; }
 
         .lecture-card { 
             background: #f9f9f9; 
-            margin: 20px 0; padding: 25px; 
-            border-right: 8px solid var(--primary-color); 
-            transition: 0.3s;
+            margin: 15px 0; padding: 20px; 
+            border-right: 5px solid var(--primary-color); 
         }
-        .lecture-card:hover { transform: scale(1.02); background: #fffdf5; }
-        .lecture-card strong { color: var(--primary-color); font-size: 1.3rem; }
 
-        .contact-box {
-            text-align: center; 
-            padding: 40px; 
-            background: #f9f9f9; 
-            border: 2px dashed var(--accent-color); 
-            border-radius: 8px;
-            margin-top: 20px;
+        /* עיצוב הטופס החדש */
+        .contact-form { display: grid; gap: 15px; margin-top: 20px; }
+        .contact-form input, .contact-form textarea { 
+            width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 1rem; box-sizing: border-box;
         }
-        .contact-btn {
-            display: inline-block; 
-            padding: 20px 45px; 
-            background: var(--primary-color); 
-            color: white !important; 
-            text-decoration: none; 
-            font-weight: bold; 
-            font-size: 1.4rem; 
-            border-radius: 50px; 
-            transition: 0.3s; 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            margin-bottom: 20px;
+        .contact-form button { 
+            padding: 15px; background: var(--primary-color); color: white; border: none; border-radius: 4px;
+            font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.3s;
         }
-        .contact-btn:hover { background: var(--accent-color); color: var(--primary-color) !important; transform: translateY(-3px); }
+        .contact-form button:hover { background: var(--accent-color); color: var(--primary-color); }
 
-        footer { text-align: center; padding: 60px; background: var(--primary-color); color: white; }
-        .journal-badge { display: inline-block; padding: 5px 15px; background: var(--accent-color); color: #1a3a5f; font-weight: bold; border-radius: 20px; margin-bottom: 10px; }
+        footer { text-align: center; padding: 40px; background: var(--primary-color); color: white; }
     </style>
 </head>
 <body>
@@ -115,41 +89,39 @@
 
 <div class="container">
     <section id="book">
-        <div class="journal-badge">זכויות עיבוד פנויות</div>
         <h2>צלילת העורב | The Raven's Dive</h2>
-        <p style="font-size: 1.2rem; line-height: 1.8;">
+        <p style="font-size: 1.1rem; line-height: 1.6;">
             <strong>מזימה שקפאה בזמן מתעוררת לחיים.</strong><br>
-            מותחן קנוניה בינלאומי המבוסס על אירועים היסטוריים מטלטלים. מסע בין 1945 לשנות ה-80, בין נאמנות לבגידה, בלב ליבה של אירופה.
+            מותחן קנוניה המבוסס על אירועים היסטוריים מטלטלים. סיפור על בריתות חשאיות, בגידות והון שחוצים עשורים.
         </p>
     </section>
 
     <section id="lectures">
-        <h2>הרצאות לקהל הרחב ולוותיקים</h2>
-        <div class="lecture-card">
-            <strong>הנוסע מטאורד</strong><br>
-            סיפורו המדהים של האיש שהגיע ממדינה שלא קיימת על המפה.
-        </div>
-        <div class="lecture-card">
-            <strong>תעלומות היסטוריות</strong><br>
-            מסע בעקבות דמויות ואירועים שנותרו ללא פתרון עד היום.
-        </div>
+        <h2>הרצאות והדרכות</h2>
+        <div class="lecture-card"><strong>הנוסע מטאורד</strong> - תעלומת האיש ממדינה שלא קיימת.</div>
+        <div class="lecture-card"><strong>סדנאות כתיבה</strong> - אמנות סיפור הסיפורים לדור הצעיר.</div>
     </section>
 
     <section id="about">
         <h2>אודות</h2>
-        <p><strong>ברוך חרמון</strong> הוא עיתונאי בעל תעודה, שדרן רדיו וסופר של חמישה ספרים. </p>
-        <p>בעל קריירה עשירה בניהול מערכות תקשורת ואבטחת מידע בארגון "ידיעות אחרונות". כיום מרצה ומעביר סדנאות כתיבה וסיפור סיפורים.</p>
+        <p><strong>ברוך חרמון</strong> הוא עיתונאי, סופר (5 ספרים) ומומחה לתקשורת נתונים. בעברו ניהל את מערכות המחשוב של ארגון "ידיעות אחרונות".</p>
     </section>
 
     <section id="contact">
         <h2>צור קשר</h2>
-        <div class="contact-box">
-            <p style="font-size: 1.2rem; margin-bottom: 25px;">אשמח לשמוע מכם! לתיאום הרצאות או למידע נוסף על הספרים:</p>
-            <a href="mailto:bhermon@gmail.com?subject=פנייה מהאתר הרשמי" class="contact-btn">
-               📧 לחצו כאן לשליחת מייל ישיר
-            </a>
-            <p style="color: #666;">או כתבו לכתובת: <strong>bhermon@gmail.com</strong></p>
-        </div>
+        <p>מעוניינים במידע נוסף או בתיאום הרצאה? השאירו פרטים ואחזור אליכם:</p>
+        
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="e1441beb-e9a9-4b44-81a0-56cec39b070b">
+            
+            <input type="text" name="name" placeholder="שם מלא" required>
+            <input type="email" name="email" placeholder="אימייל לחזרה" required>
+            <textarea name="message" rows="5" placeholder="הודעה..." required></textarea>
+            
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+            <button type="submit">שלח הודעה</button>
+        </form>
     </section>
 </div>
 
