@@ -1,3 +1,4 @@
+HTML
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
@@ -51,7 +52,14 @@
             border-top: 4px solid var(--accent-color);
         }
         
-        h2 { color: var(--primary-color); border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        /* עדכון גודל וצבע הכותרות לבקשתך */
+        h2 { 
+            color: var(--primary-color); 
+            font-size: 2.2rem; /* הגדלת הפונט */
+            border-bottom: 2px solid #eee; 
+            padding-bottom: 10px; 
+            margin-top: 0;
+        }
 
         .lecture-card { 
             background: #f9f9f9; 
@@ -59,7 +67,6 @@
             border-right: 5px solid var(--primary-color); 
         }
 
-        /* עיצוב הטופס החדש */
         .contact-form { display: grid; gap: 15px; margin-top: 20px; }
         .contact-form input, .contact-form textarea { 
             width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 1rem; box-sizing: border-box;
@@ -71,6 +78,9 @@
         .contact-form button:hover { background: var(--accent-color); color: var(--primary-color); }
 
         footer { text-align: center; padding: 40px; background: var(--primary-color); color: white; }
+        
+        .journal-badge { display: inline-block; padding: 5px 15px; background: var(--accent-color); color: #1a3a5f; font-weight: bold; border-radius: 20px; margin-bottom: 15px; }
+        .quotes-section { border-right: 3px solid var(--accent-color); padding-right: 15px; font-style: italic; color: #555; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -91,7 +101,7 @@
     <section id="book">
         <div class="journal-badge">זכויות עיבוד פנויות</div>
         <h2>צלילת העורב | The Raven's Dive</h2>
-        <p style="font-size: 1.2rem; line-height: 1.8;">
+        <p style="font-size: 1.15rem; line-height: 1.7;">
             <strong>מזימה שקפאה בזמן מתעוררת לחיים.</strong><br>
             מבוסס על אירועים אמיתיים מטלטלים - סיפור המתחיל ב-1945 בברית דמים חשאית בין קצין מודיעין בריטי לברון נאצי בפירנצה, ומתפרץ מחדש בשנות ה-80 בלב אירופה.
         </p>
@@ -99,7 +109,7 @@
         
         <div class="quotes-section">
             <p>"ספר מרתק שכתוב היטב, זורם וקולח... עלילה שסוחפת את הקורא מהפרק הראשון ושומרת על מתח גבוה."</p>
-            <p>"שילוב  בין עובדות היסטוריות למתח בדיוני במיטבו."</p>
+            <p>"שילוב בין עובדות היסטוריות למתח בדיוני במיטבו."</p>
         </div>
     </section>
 
@@ -111,7 +121,7 @@
 
     <section id="about">
         <h2>אודות</h2>
-        <p><strong>ברוך חרמון</strong> הוא איש תקשורת מחשבים, סופר (5 ספרים) ואבטחת מידע. בעברו עבד במערכות המחשוב והתקשורת של ארגון "ידיעות אחרונות".</p>
+        <p><strong>ברוך חרמון</strong> הוא איש תקשורת מחשבים, סופר (5 ספרים) ומומחה לאבטחת מידע. בעברו ניהל את מערכות המחשוב והתקשורת של ארגון "ידיעות אחרונות".</p>
     </section>
 
     <section id="contact">
