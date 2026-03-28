@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צלילת העורב - תקציר</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 800px; margin: 40px auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); display: flex; flex-direction: column; align-items: center; text-align: center; }
+        img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-bottom: 25px; }
+        h1 { color: #2c3e50; margin-bottom: 10px; }
+        p { font-size: 1.2em; line-height: 1.6; max-width: 600px; }
+        .back-btn { margin-top: 30px; text-decoration: none; color: #3498db; font-weight: bold; border: 1px solid #3498db; padding: 10px 20px; border-radius: 5px; transition: 0.3s; }
+        .back-btn:hover { background: #3498db; color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="raven-dive-cover.jpg" alt="צלילת העורב">
+        
+        <h1>צלילת העורב</h1>
+        <p>
+            ברית חשאית בין קצין מודיעין יהודי לברון נאצי ב-1945 פירנצה, מציתה קונספירציה בינלאומית עשרות שנים מאוחר יותר. סיפור על נאמנות, בגידה וצללים מהעבר שאינם מרפים.
+        </p>
+        
+        <a href="books.html" class="back-btn">חזרה לגלריה</a>
+    </div>
+
+</body>
+</html>
